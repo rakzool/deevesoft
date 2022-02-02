@@ -1,0 +1,29 @@
+@import "../../styles/mixins";
+
+.setGoalContainerMain {
+  padding: 4rem 5rem;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+}
+
+.inputArea {
+  @include flexDesign(flex-start, center, row);
+  margin-bottom: 2rem;
+  label {
+    font-size: 1.5rem;
+    padding-left: 20px;
+  }
+}
+
+.submitBtn {
+  margin-top: 3rem;
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+  padding: 5px 4rem;
+  border: 1.5px solid #007bff;
+  outline: none;
+  border-radius: 10px;
+  background-color: white;
+  text-transform: uppercase;
+}

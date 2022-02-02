@@ -1,0 +1,72 @@
+@import "../../styles/mixins";
+@import "../..//styles/variables";
+
+.container-main {
+  width: 100%;
+  height: 100vh;
+  background: rgb(248, 248, 248);
+  @include flexDesign(center, center, column);
+}
+
+.login-container {
+  width: 32vw;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  border-radius: 10px;
+  background: white;
+}
+
+.login-header {
+  background-color: $accent-Color;
+  border-radius: 10px 10px 0px 0px;
+  padding: 1rem 0rem 1rem 0rem;
+  width: 100%;
+  h1 {
+    color: $sub-color;
+    padding: 0rem 0rem 0rem 1rem;
+  }
+}
+
+.button-flex {
+  width: 100%;
+  @include flexDesign(space-between, center, row);
+  flex-wrap: wrap;
+
+  & :first-child {
+    margin-bottom: 1rem;
+  }
+
+  & :last-child {
+    margin-bottom: 1rem;
+  }
+}
+
+form {
+  padding: 0rem 2rem 3rem 2rem;
+}
+
+.register-section {
+  @include flexDesign(center, center, row);
+
+  .new-user {
+    text-align: center;
+    margin-top: 1.5rem;
+    & :first-child {
+      font-size: 1rem;
+      color: grey;
+    }
+
+    & :last-child {
+      font-size: 1rem;
+      margin-left: 5px;
+      color: black;
+    }
+  }
+}
+
+.content-top {
+  padding: 1rem 2rem 0rem 2rem;
+  p {
+    font-size: 1.2rem;
+    color: grey;
+  }
+}

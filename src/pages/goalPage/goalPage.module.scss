@@ -1,0 +1,11 @@
+@import "../../styles/mixins";
+.GoalPageMainContainer {
+  @include flexDesign(center, flex-start, row);
+
+  min-height: 70vh;
+  padding: 1rem 5rem;
+
+  div {
+    flex: 1;
+  }
+}

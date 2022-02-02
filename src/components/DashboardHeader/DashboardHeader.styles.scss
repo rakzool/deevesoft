@@ -1,0 +1,28 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.headerContainer {
+  margin: 2rem 15rem 2rem 7rem;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  @include flexDesign(flex-start, center, row);
+}
+
+.hyperLink {
+  flex: 1;
+
+  h4 {
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: $sub-color;
+  }
+}
+
+.active {
+  background-color: $accent-Color;
+}
+
+.hidden {
+  display: none;
+}

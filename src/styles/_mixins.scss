@@ -1,0 +1,12 @@
+@mixin flexDesign($justifyConent, $alignItems, $flexDirection) {
+  display: flex;
+  justify-content: $justifyConent;
+  align-items: $alignItems;
+  flex-direction: $flexDirection;
+}
+
+@mixin shrinkLabel {
+  top: -14px;
+  font-size: 12px;
+  color: $main-color;
+}

@@ -1,0 +1,14 @@
+@import "../../styles/variables";
+
+.goalTextContainerMain {
+  h1 {
+    font-weight: bolder;
+    font-size: 3rem;
+    color: rgb(24, 24, 24);
+    margin-bottom: 1.5rem;
+  }
+  p {
+    color: $sub-color;
+    font-size: 1.2rem;
+  }
+}
